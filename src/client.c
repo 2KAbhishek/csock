@@ -29,12 +29,12 @@ int main(int argc, char *argv[]) {
   int in = inet_pton(AF_INET, "127.0.0.1", &server.sin_addr);
   in = connect(fd, (struct sockaddr *)&server, sizeof(server));
   if (in < 0) {
-    perror("Error: Client Connection Failed.");
+    perror("Client Error: Connection Failed.");
     return 0;
   }
 
   while (1) {
-    printf("Please enter the message: ");
+    printf("Enter the message: ");
     bzero(buff, 256);
     fgets(buff, 255, stdin);
 
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
 
     in = send(fd, buff, strlen(buff), 0);
     if (in < 0) {
-      perror("\nClient Error: Writing to Server");
+      perror("\nClient Error: Cannot write to server");
       return 0;
     }
 
