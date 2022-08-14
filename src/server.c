@@ -40,7 +40,7 @@ int main() {
 
       while ((n = recv(in, buff, 256, 0)) > 0) {
 
-        if (strcmp(buff, "shutdown") == 10) {
+        if (strcmp(buff, "bye\n") == 0) {
           printf("\nServer is shutting down\n");
           close(in);
           close(fd);

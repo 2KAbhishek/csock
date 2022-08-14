@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     bzero(buff, 256);
     fgets(buff, 255, stdin);
 
-    if (strcmp(buff, "shutdown") == 10) {
+    if (strcmp(buff, "bye\n") == 0) {
       send(fd, buff, strlen(buff), 0);
       printf("Client: Exiting\n");
       close(fd);
