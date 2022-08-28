@@ -1,1 +1,4 @@
 # Excluded files
+bin/
+client
+server
