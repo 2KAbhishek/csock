@@ -6,12 +6,14 @@ client:
 
 server:
 	mkdir -p bin
-	$(COMPILER) src/client.c -o bin/client
+	$(COMPILER) src/server.c -o bin/server
 
 run-server:
+	make server
 	./bin/server
 
 run-client:
+	make client
 	./bin/client
 
 clean:
