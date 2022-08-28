@@ -20,10 +20,10 @@
 <a href="https://github.com/2KAbhishek/csock/pulse">
 <img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/csock?style=flat&color=e06c75&label="> </a>
 
-<h3>Short sweet headline with 🎇🎉</h3>
+<h3>Socket chat using C 🔌🗯️</h3>
 
 <figure>
-  <img src= "images/screenshot.png" alt="csock Demo">
+  <img src= "images/screenshot.jpg" alt="csock Demo">
   <br/>
   <figcaption>csock screenshot</figcaption>
 </figure>
@@ -32,17 +32,17 @@
 
 ## What is this
 
-csock is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+csock is a multi client chat application built with C.
 
 ## Inspiration
 
-csock was inspired by `<reason/idea>`.
+Had an idea to implement this while learning about sockets.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
+- You have installed the latest version of `gcc`
 
 ## Getting csock
 
@@ -51,55 +51,35 @@ To get csock, follow these steps:
 ```bash
 git clone https://github.com/2kabhishek/csock
 cd csock
-<install_command>
 ```
 
 ## Using csock
 
+- To run server
+
 ```bash
-USAGE:
-    command [FLAGS] [OPTIONS]
+make run-server
+```
 
-FLAGS:
-    -h, --help              Prints help information.
+- To run clients
 
-OPTIONS:
-    -o, --option <value>    Option description.
-    Options are: a, b. [default: a]
-
-Example:
-
-
+```bash
+make run-client
 ```
 
 ## How it was built
 
-csock was built using `<tech/library>`
-
-## Challenges faced
-
-While building csock the main challenges were `<issue/difficulty>`
+csock was built using `neovim and gcc`
 
 ## What I learned
 
-While building csock I `<learned/accomplished>` about `<learning/accomplishment>`
-
-## What's next
-
-Planning to add `<feature/module>`.
-
-### To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-- [ ] Change me
-- [ ] Update README
-- [ ] Finish it
+- Learned about sockets and implementation in C
 
 Hit the ⭐ button if you found this useful.
 
 ## More Info
+
+For Java implementation see [socket-chat](https://github.com/2KAbhishek/socket-chat/)
 
 <div align="center">
 
